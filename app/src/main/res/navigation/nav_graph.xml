@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainFragment">
+
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="lt.makseckas.exam.ui.main.MainFragment"
+        android:label="@string/label_fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_MainFragment_to_FragmentOne"
+            app:destination="@id/FragmentOne" />
+        <action
+            android:id="@+id/action_MainFragment_to_FragmentTwo"
+            app:destination="@id/FragmentTwo" />
+        <action
+            android:id="@+id/action_MainFragment_to_FragmentLogin"
+            app:destination="@id/FragmentLogin" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentOne"
+        android:name="lt.makseckas.exam.ui.main.FragmentOne"
+        android:label="@string/label_fragment_one"
+        tools:layout="@layout/fragment_one">
+        <action
+            android:id="@+id/action_FragmentOne_to_MainFragment"
+            app:destination="@id/MainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentTwo"
+        android:name="lt.makseckas.exam.ui.main.FragmentTwo"
+        android:label="@string/label_fragment_two"
+        tools:layout="@layout/fragment_two">
+        <action
+            android:id="@+id/action_FragmentTwo_to_MainFragment"
+            app:destination="@id/MainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentLogin"
+        android:name="lt.makseckas.exam.ui.main.FragmentLogin"
+        android:label="@string/label_fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_FragmentLogin_to_MainFragment"
+            app:destination="@id/MainFragment" />
+        <action
+            android:id="@+id/action_FragmentLogin_to_FragmentAdminPanel"
+            app:destination="@id/FragmentAdminPanel" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentAdminPanel"
+        android:name="lt.makseckas.exam.ui.main.FragmentAdminPanel"
+        android:label="@string/label_fragment_admin_panel"
+        tools:layout="@layout/fragment_admin_panel">
+    </fragment>
+
+</navigation>

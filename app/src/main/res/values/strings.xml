@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Exam</string>
+    <string name="pagalba">Pagalba</string>
+    <string name="label_fragment_main">Main</string>
+    <string name="label_fragment_one">One</string>
+    <string name="label_fragment_two">Two</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pulvinar ultrices enim, a mollis risus auctor id. Mauris tincidunt quis est tristique dignissim. Donec ac erat rutrum, finibus eros sit amet, efficitur sem. In lorem sapien, placerat et est non, consequat laoreet metus. Aliquam vulputate vitae quam vitae vulputate. Praesent a turpis eros. In dictum egestas lectus, at posuere arcu sodales nec. Integer quis risus quis lacus mattis ornare efficitur eu dolor. Mauris porttitor augue et velit vestibulum, nec fringilla urna dictum. Vivamus fringilla ultricies pretium. Etiam facilisis at magna sit amet luctus. Cras tincidunt ultricies nibh, a tristique dolor pharetra pulvinar. Donec a pretium purus. Ut ac fermentum mi. Aenean sollicitudin interdum enim eget ornare. Aliquam eros neque, scelerisque vitae lectus ut, pellentesque laoreet elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat sit amet ipsum vel dapibus. Mauris pharetra odio non orci pretium, eu tempus tortor aliquet. Fusce ligula tellus, aliquet vitae tempor at, consectetur a sem. Mauris eu egestas est. Nulla magna orci, lobortis ac consequat vitae, sollicitudin sit amet lorem. Aenean mollis fermentum arcu, id feugiat eros mattis quis. Maecenas auctor eu nisi et pharetra.  Curabitur sed fermentum ex. Curabitur tincidunt libero sed aliquam vestibulum. Nunc ultrices dui id risus ornare elementum. Morbi ante nibh, faucibus ac faucibus eu, aliquet sit amet dui. Mauris fermentum metus eu magna lobortis, sit amet aliquam risus porta. Aenean maximus ornare turpis. Etiam auctor maximus placerat. Morbi ultricies libero eu ornare convallis. Duis quis odio orci. Etiam ultrices, tellus a congue ultricies, urna diam rutrum ante, eu molestie quam massa a mauris. Aliquam eget dui semper, pharetra nulla at, sollicitudin nibh. In ut nisi blandit lorem suscipit aliquam id a turpis. Nullam quis elit risus. Morbi aliquet ex lorem, nec eleifend enim congue sed. Mauris blandit feugiat felis, vel dignissim sapien faucibus id.  Vestibulum maximus lorem ut porttitor volutpat. Curabitur urna lacus, dictum et velit et, hendrerit suscipit tellus. Etiam elementum turpis quis lectus aliquam ullamcorper. Aliquam condimentum nunc enim, nec malesuada tellus porta a. Pellentesque hendrerit mi quis erat vestibulum, ultricies convallis enim efficitur. Suspendisse purus purus, condimentum quis justo non, lobortis iaculis nunc. Fusce ultricies quis quam at hendrerit. Cras at bibendum nisi. Quisque leo dolor, vehicula vitae augue feugiat, venenatis rhoncus odio. Fusce rhoncus tellus eu felis laoreet, quis tincidunt dui porta. Etiam tincidunt odio magna, molestie suscipit augue faucibus vitae. Morbi pulvinar est ut elit sagittis, quis sagittis massa tristique.  Vivamus in ex eu lacus rhoncus luctus et a lacus. Integer ultricies nulla non dolor rutrum faucibus. Donec at tempor libero, volutpat ultrices elit. Etiam tincidunt congue urna placerat elementum. Donec efficitur hendrerit enim ut mattis. Vivamus tristique vehicula nunc, sit amet aliquet magna imperdiet ut. Duis et condimentum enim. Etiam ac dignissim nunc. Vivamus convallis tempus malesuada. Nunc sed velit nec arcu fringilla pretium.</string>
+    <string name="desciption">Desciption</string>
+    <string name="number_one">Number One</string>
+    <string name="number_two">Number Two</string>
+    <string name="action_settings">Admin panel</string>
+    <string name="please_authenticate_before_proceeding">Please authenticate before proceeding</string>
+    <string name="back">Back</string>
+    <string name="login">Login</string>
+    <string name="label_fragment_login">Login</string>
+    <string name="biometric_login">Biometric login</string>
+    <string name="log_in_using_your_biometric_credential">Log in using your biometric credential</string>
+    <string name="phone_coordinates_from_accelerometer">Phone coordinates from accelerometer</string>
+    <string name="x">X:</string>
+    <string name="y">Y:</string>
+    <string name="z">Z:</string>
+    <string name="label_fragment_admin_panel">Admin Panel</string>
+</resources>
