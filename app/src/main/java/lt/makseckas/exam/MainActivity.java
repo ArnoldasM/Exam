@@ -1,22 +1,20 @@
 package lt.makseckas.exam;
 
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.Button;
-
 import com.google.android.material.snackbar.Snackbar;
 
 import lt.makseckas.exam.databinding.ActivityMainBinding;
-import lt.makseckas.exam.ui.main.MainFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,10 +31,9 @@ public class MainActivity extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-        Button buttonHelp = findViewById(R.id.button_help);
-        buttonHelp.setOnClickListener(view -> {
-            Snackbar snackbar = Snackbar .make(view, "Need help? Contact as at arnoldas@makseckas.lt", Snackbar.LENGTH_LONG);
-            snackbar.setAction("Help", view1 -> composeEmail(new String[]{"arnoldas@makseckas.lt"}, "I need help!"));
+        binding.buttonHelp.setOnClickListener(view -> {
+            Snackbar snackbar = Snackbar.make(view, R.string.help_text, Snackbar.LENGTH_LONG);
+            snackbar.setAction(R.string.help, view1 -> composeEmail(new String[]{"arnoldas@makseckas.lt"}, getString(R.string.help_email_subject)));
             snackbar.show();
         });
     }

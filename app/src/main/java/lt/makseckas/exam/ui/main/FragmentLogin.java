@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.biometric.BiometricManager;
@@ -38,7 +37,7 @@ public class FragmentLogin extends Fragment {
             @Override
             public void onAuthenticationError(int errorCode, @NonNull CharSequence errString) {
                 super.onAuthenticationError(errorCode, errString);
-                Snackbar.make(binding.getRoot(), "Authentication error: " + errString, Snackbar.LENGTH_SHORT).show();
+                Snackbar.make(binding.getRoot(), getString(R.string.auth_error) + errString, Snackbar.LENGTH_SHORT).show();
             }
 
             @Override
@@ -46,13 +45,13 @@ public class FragmentLogin extends Fragment {
                 super.onAuthenticationSucceeded(result);
                 NavHostFragment.findNavController(FragmentLogin.this)
                         .navigate(R.id.FragmentAdminPanel);
-                Snackbar.make(binding.getRoot(), "Authentication succeeded!", Snackbar.LENGTH_LONG).show();
+                Snackbar.make(binding.getRoot(), R.string.auth_success, Snackbar.LENGTH_LONG).show();
             }
 
             @Override
             public void onAuthenticationFailed() {
                 super.onAuthenticationFailed();
-                Snackbar.make(binding.getRoot(), "Authentication failed", Snackbar.LENGTH_SHORT).show();
+                Snackbar.make(binding.getRoot(), R.string.auth_failed, Snackbar.LENGTH_SHORT).show();
             }
         });
         BiometricPrompt.PromptInfo promptInfo = new BiometricPrompt.PromptInfo.Builder()
@@ -63,14 +62,12 @@ public class FragmentLogin extends Fragment {
 
         biometricPrompt.authenticate(promptInfo);
 
-        Button buttonBack = binding.buttonBack;
-        buttonBack.setOnClickListener(view1 ->
+        binding.buttonBack.setOnClickListener(view1 ->
                 NavHostFragment.findNavController(FragmentLogin.this)
                         .navigate(R.id.MainFragment)
         );
 
-        Button buttonLogin = binding.buttonLogin;
-        buttonLogin.setOnClickListener(view1 ->
+        binding.buttonLogin.setOnClickListener(view1 ->
                 biometricPrompt.authenticate(promptInfo)
         );
 

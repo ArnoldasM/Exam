@@ -20,4 +20,10 @@
     <string name="y">Y:</string>
     <string name="z">Z:</string>
     <string name="label_fragment_admin_panel">Admin Panel</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="auth_success">Authentication succeeded!</string>
+    <string name="auth_error">\"Authentication error: \"</string>
+    <string name="help_text">Need help? Contact as at arnoldas@makseckas.lt</string>
+    <string name="help">Help</string>
+    <string name="help_email_subject">I need help!</string>
 </resources>
